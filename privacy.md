@@ -1,6 +1,6 @@
 # TELYVEX — Privacy Policy / Datenschutzerklärung
 Version: 27 November 2026.
-Applies to TELYVEX System & Voice Monitor, Windows Sender DEV6.2 and compatible USB displays.
+Applies to TELYVEX System & Voice Monitor, TELYVEX Windows Sender and compatible USB displays.
 
 ## 1. Controller and contact
 Controller: Dr.-Ing. József Majtényi, Germany. TELYVEX is an independent development project, not a separate legal entity. Contact email: telyvexsupport@gmail.com.
