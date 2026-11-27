@@ -1,0 +1,32 @@
+# TELYVEX — Privacy Policy / Datenschutzerklärung
+Version: 27 November 2026.
+Applies to TELYVEX System & Voice Monitor, Windows Sender DEV6.2 and compatible USB displays.
+
+## 1. Controller and contact
+Controller: Dr.-Ing. József Majtényi, Germany. TELYVEX is an independent development project, not a separate legal entity. Contact email: telyvexsupport@gmail.com.
+This notice concerns TELYVEX. Discord and the website hosting provider operate their own services under their own privacy notices.
+
+## 2. Data and purposes
+The Sender reads local computer hardware and operating-system metrics, including CPU/GPU utilization, clocks, temperatures, power, memory and network transfer rates where available. Device settings, sensor selections, machine name, local sensor snapshots, diagnostics and connection status may be stored locally for configuration and troubleshooting. Selected readings are sent to the connected display over USB serial.
+The optional Discord module connects to the local Discord desktop client using Discord RPC. When authorized, it processes the account ID, selected voice channel ID and name, participant IDs and display names, speaking indicators, participant counts, and the local user's mute/deafen settings. These data provide a live voice-channel display. Names and speaking indicators and channel information can be visible on the physical display to people nearby. Optional voice-write authorization allows explicit mute/deafen commands from compatible hardware. The module does not record voice audio or message content in the reviewed version.
+The reviewed Sender has no developer-operated cloud collection endpoint; Discord authorization and refresh requests communicate directly with Discord over HTTPS. No claim is made about unrelated programs or Discord's own processing.
+
+## 3. Legal bases
+Where the operator processes personal data in providing requested functionality, Article 6(1)(b) GDPR may apply to data necessary to provide it. Optional Discord access is initiated by the user through authorization; where consent is the applicable legal basis, it may be withdrawn at any time (Article 6(1)(a)). Other participants' limited voice-presence metadata is processed for the legitimate interest in displaying the current voice channel (Article 6(1)(f)), subject to balancing and applicable rights. Support requests are handled to respond to the user's request and resolve technical issues, as applicable under Article 6(1)(b) or (f). OAuth permission is not by itself a determination that GDPR consent is valid.
+
+## 4. Storage and retention
+Voice roster and speaking state are maintained in runtime memory and reset when the connection/channel changes. The Sender stores authorization grants, including access/refresh tokens, scopes and expiry, using Windows DPAPI bound to the local account. Cache file names contain application/account identifiers. Disabling the module stops its use but does not necessarily erase saved grants. Local settings, diagnostic files and logs remain until removed or overwritten; the reviewed log implementation appends without an automatic retention limit. No automatic upload of diagnostic files is present in the reviewed code. If support files are voluntarily supplied, they may contain identifiers and technical details; do not send secrets. Support correspondence and attachments are to be retained only as long as necessary for handling the request and applicable legal obligations; deletion may be requested at the contact email.
+
+## 5. Recipients, transfers and website
+Discord processes authentication and its own service data; see https://discord.com/privacy. Data displayed locally is accessible to anyone able to see the screen or access the user's computer/display. The reviewed version does not send voice-channel metadata to a developer-operated server. Documentation hosting: GitHub. GitHub documents that visitor IP addresses are logged and stored for security purposes, regardless of login status. See https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages and https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement. Documentation hosting serves the legitimate interest in making these notices available (Article 6(1)(f) GDPR, where applicable). See the provider privacy notices for details of retention and transfer arrangements. Discord and hosting providers may process data internationally under their own published arrangements.
+
+## 6. Disable, revoke, delete
+Turn off the Discord module in the Sender, revoke TELYVEX under Discord User Settings > Authorized Apps, then exit the Sender and delete the relevant .dpapi file under %LOCALAPPDATA%\AIDAUniversal\discord if desired. Local Sender settings/logs/diagnostics are under %LOCALAPPDATA%\AIDAUniversal\Sender; removing them may reset configuration. Do not delete unrelated applications' files. Contact the operator at telyvexsupport@gmail.com for assistance and deletion requests concerning data held by the operator.
+
+## 7. Rights
+Where applicable, users have rights to access, rectification, erasure, restriction, portability, objection, withdrawal of consent and complaint to a supervisory authority. Consent withdrawal does not affect prior lawful processing. No automated decisions with legal or similarly significant effects are intended. Providing optional Discord data is not necessary for hardware-only monitoring; declining authorization disables Discord features. The operator should respond to requests within applicable legal deadlines.
+For private-sector processing in Bavaria, the Bavarian State Office for Data Protection Supervision (BayLDA) may be contacted via https://www.lda.bayern.de/; other competent authorities may also apply.
+
+## 8. Security and changes
+Local DPAPI protection and scoped authorization reduce exposure but cannot protect against every compromise of the user's own computer. Review this notice when software data flows change. Report privacy or security concerns to telyvexsupport@gmail.com.
+
